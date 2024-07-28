@@ -45,6 +45,7 @@ validation(event: MouseEvent) {
 
   modal2: boolean = false;
   modal3: boolean = false;
+  modal4: boolean = false;
 
 
   openModal2() {
@@ -65,12 +66,24 @@ validation(event: MouseEvent) {
   }
 
   toggleModal3() {
-    this.modal3 = !this.modal2;
+    this.modal3 = !this.modal3;
   }
 
   closeModals3() {
     this.modal3 = false;
   }
 
+
+  openModal4() {
+    this.modal4 = true;
+  }
+
+  toggleModal4() {
+    this.modal4 = !this.modal4;
+  }
+
+  closeModals4() {
+    this.modal4 = false;
+  }
 
 }
