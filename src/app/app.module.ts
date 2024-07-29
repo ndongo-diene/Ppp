@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { CardSectionComponent } from "./card-section/card-section.component";
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CommonModule } from '@angular/common';
     FormulaireComponent,
     DashboardComponent,
     CardSectionComponent,
-    CommonModule
+    CommonModule,
+    FormsModule
 ],
   providers: [
     // provideClientHydration()
