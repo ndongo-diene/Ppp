@@ -5,6 +5,8 @@ import { PageConnexionComponent } from './PageConnexion/PageConnextion.component
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { CardSectionComponent } from './card-section/card-section.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 
 
 const routes: Routes = [
@@ -13,6 +15,7 @@ const routes: Routes = [
   { path: 'formulaire', component: FormulaireComponent },
   { path: 'card', component: CardSectionComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: '', redirectTo: 'connexion', pathMatch: 'full'}
 ];
 

@@ -10,6 +10,8 @@ import { FormulaireComponent } from './formulaire/formulaire.component';
 import { CardSectionComponent } from "./card-section/card-section.component";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     FormulaireComponent,
     DashboardComponent,
     CardSectionComponent,
+    ForgotPasswordComponent,
     CommonModule,
     FormsModule
 ],
