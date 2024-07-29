@@ -86,4 +86,24 @@ validation(event: MouseEvent) {
     this.modal4 = false;
   }
 
+
+  // contenent liste
+  
+  isModalOpen5 = false;
+  settings = {
+    favori: false,
+    prive: false,
+    limiter: false,
+    publique: false,
+    activer: false
+  };
+
+  openModal5() {
+    this.isModalOpen5 = true;
+  }
+
+  closeModal5() {
+    this.isModalOpen5 = false;
+  }
+
 }
