@@ -364,9 +364,67 @@
                         <div>
 
                         </div>
-                        <div class="div1o">
+                        <div class="div1o" (click)="openModal5()" >
                             <svg style="font-size: inherit; width: 1em; height: 1em;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 16H14C14.5523 16 15 16.4477 15 17C15 17.5128 14.614 17.9355 14.1166 17.9933L14 18H10C9.44772 18 9 17.5523 9 17C9 16.4872 9.38604 16.0645 9.88338 16.0067L10 16H14H10ZM8 11H16C16.5523 11 17 11.4477 17 12C17 12.5128 16.614 12.9355 16.1166 12.9933L16 13H8C7.44772 13 7 12.5523 7 12C7 11.4872 7.38604 11.0645 7.88338 11.0067L8 11H16H8ZM5 6H19C19.5523 6 20 6.44772 20 7C20 7.51284 19.614 7.93551 19.1166 7.99327L19 8H5C4.44772 8 4 7.55228 4 7C4 6.48716 4.38604 6.06449 4.88338 6.00673L5 6H19H5Z"></path></svg>
                         </div>
+
+                        <div *ngIf="isModalOpen5" class="modal5" (click)="closeModal5()">
+                          <div class="modal-content5" (click)="$event.stopPropagation()">
+                            <!-- <div class="modal-header">
+                              <h2>Paramètres</h2>
+                              <span class="close-button" (click)="closeModal5()">&times;</span>
+                            </div> -->
+                            <div class="modal-body">
+                             
+                              <div class="checkbox-group">
+
+                                <ul>
+
+                                  <label>
+                                    <input type="checkbox"  /> 
+                                    <i class="i-icon"><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 512"><path fill="#FFD700" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg></i>
+                                    Favoris
+                                  </label>
+                                  <label>
+                                    <input type="checkbox"  />
+                                    Sans étoile
+                                  </label>
+                                  <label>
+                                    <input type="checkbox"  /> 
+                                    Réponses non lues
+                                  </label>
+                                  <label>
+                                    <input type="checkbox"  /> 
+                                    Sans réponses non lues 
+                                  </label>
+                                  <label>
+                                    <input type="checkbox" /> 
+                                    Désactivé
+                                  </label>
+                                  <label>
+                                    <input type="checkbox" /> 
+                                    Activitée
+                                  </label><label>
+                                    <input type="checkbox" /> 
+                                    Publique
+                                  </label><label>
+                                    <input type="checkbox" /> 
+                                    Non répertorié
+                                  </label><label>
+                                    <input type="checkbox" /> 
+                                    Limité
+                                  </label><label>
+                                    <input type="checkbox" /> 
+                                    Privé
+                                  </label>
+                                  </ul>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+
                         <div class="div1o">
                             <svg style="font-size: inherit; width: 1em; height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M312 95.7h48c13.25 0 23.1-10.76 23.1-24.02c0-13.26-10.75-24.02-23.1-24.02h-48c-13.25 0-24 10.76-24 24.02C288 84.95 298.8 95.7 312 95.7zM312 351.9h175.1c13.25 0 24-10.76 24-24.02s-10.75-24.02-24-24.02H312c-13.25 0-24 10.76-24 24.02S298.8 351.9 312 351.9zM312 223.8h111.1c13.25 0 24-10.76 24-24.02s-10.75-24.02-24-24.02H312c-13.25 0-24 10.76-24 24.02S298.8 223.8 312 223.8zM551.1 431.1H312c-13.25 0-24 10.76-24 24.02S298.8 480 312 480h239.1c13.25 0 24-10.76 24-24.02S565.2 431.1 551.1 431.1zM145.6 39.37c-9.062-9.82-26.19-9.82-35.25 0L14.38 143.4c-9 9.758-8.406 24.96 1.344 33.94C20.35 181.7 26.19 183.8 32 183.8c6.469 0 12.91-2.594 17.62-7.719L104 117.1v338.9C104 469.2 114.8 480 128 480S152 469.2 152 455.1V117.1l54.37 58.95C215.3 185.8 230.5 186.5 240.3 177.4C250 168.4 250.6 153.2 241.6 143.4L145.6 39.37z"></path></svg>
                         </div>

@@ -9,6 +9,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { CardSectionComponent } from "./card-section/card-section.component";
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { CommonModule } from '@angular/common';
     FormulaireComponent,
     DashboardComponent,
     CardSectionComponent,
-    CommonModule
+    ForgotPasswordComponent,
+    CommonModule,
+    FormsModule
 ],
   providers: [
     // provideClientHydration()

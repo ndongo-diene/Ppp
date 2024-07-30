@@ -1,42 +1,57 @@
-<!-- src/app/login/login.component.html -->
-
 <div style="cursor: pointer;" class="retourn-arrow" onclick="window.history.back();">&larr;</div>
 
 <div class="login-container">
     <div class="col-md-6" id="loginform">
-            <div class="logo">
-        <img src="assets/images/logo.jpeg" alt="forms.app">
-      </div>
-      <h3>Bonjour ! Vous avez manqué à vos formulaires. 😊</h3>
-      <div style="padding: 0px;">
-      <button  class="btn btn-google" style="padding: 25px;"><br>
-        <img src="assets/images/igoogle.png" alt="Google logo">
-        S'IDENTIFIER AVEC GOOGLE 
         
-      </button> <br>
-      <button  class="btn btn-apple" style="padding: 25px;">
-        <img src="assets/images/Apple.png" alt="Apple logo">
-        S'IDENTIFIER AVEC APPLE
-      </button>
-    </div>
-      <div class="divider">
-        <span>_________  OU _________</span>
-      </div>
-      <form>
-        <div class="form-group">
-          <label for="email">Nom d'utilisateur ou email</label>
-          <input formControlName="email" type="email" id="email" placeholder="exemple@domaine.com">
-        </div>
-        <div class="form-group nano">
-          <label for="password">Mot de passe</label>
-          <input formControlName="password" type="password" id="password" placeholder="Veuillez saisir votre mot de passe">
-        </div>
-        <a >Vous avez oublié le mot de passe</a>
+        <img style="width: 130px; margin-bottom: 10px;" src="assets/images/logo.jpeg" alt="">
+        <p style="margin-top: 1em; margin-bottom: 2em;">Bonjour ! C est bon de te revoir. 👋</p>
 
-        <button class="btn btn-primary">S'IDENTIFIER</button>
-      </form>
-      <p class="signup-text">Vous êtes nouveau ? <a href="#">S'inscrire gratuitement</a></p>
+        <div>
+
+                <div style="border: solid 1px #5085ec; background-color: #5085ec; padding: 5px; margin-bottom: 10px;">
+                    <div style="border: solid 1px white; background: #fff; position: absolute;">
+                        <img width="25px" src="assets/images/igoogle.png" alt="">
+                    </div>
+                    <span> <h4 style="color: white; font-size: 1em;"> S IDENTIFIER AVEC GOOGLE </h4> </span>
+                </div>
+
+                <div style="border: solid 1px ; background-color: black; padding: 5px;">
+                    <div style="border: solid 1px black; background: black; position: absolute;">
+                        <img width="25px" src="https://orange-caraibe.twic.pics/2022-09/logo_apple_white.png" alt="">
+                    </div>
+                    <span> <h4 style="color: white; font-size: 1em;"> S IDENTIFIER AVEC APPLE </h4> </span>
+                </div>
+
+        </div>
+
+        <div class="tirerOu">
+           <p class="leOu"> ou </p> 
+        </div>
+
+                <form  #loginForm="">
+                  <div class="form-group">
+                    <label for="username">Nom d'utilisateur ou email</label>
+                    <input type="text" id="username" name="username" class="form-control"  required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" class="form-control"  required>
+                  </div>
+                  <div class="forgotPassword">
+                    <a class="Aforgot" href="/forgot-password">Vous avez oublié votre mot de passe ?</a>
+                  </div>
+                  <button type="submit" class="btn btn-primary" [disabled]="!loginForm">S IDENTIFIER</button>
+                </form>
+
+                <div class="buttonIns" style="margin-top: 2em; font-size: 13px; text-align: left;">
+                    <p style="display: inline-block; opacity: .7; ">Vous êtes nouveau ?</p> 
+                        <a href="/inscription" class="sign-up" tabindex="1"> 
+                            S'inscrire gratuitement
+                        </a>
+                </div>
+
     </div>
+>>>>>>> 25d4ed56685790f4cf5cd1791e4c6163ca967e7c
     
     <div class="col-md-6" id="diaporamacontainer">
       <div class="diaporama-container">
