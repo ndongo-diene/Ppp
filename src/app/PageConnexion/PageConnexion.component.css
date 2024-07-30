@@ -1,127 +1,183 @@
-.container-fluid {
-    height: 100vh;
+/* src/app/login/login.component.css */
+.login-container {
     display: flex;
-    align-items: center;
-    background-color: #000;
-}
-
-#col1{
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.login-header h4 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;font-size: 22px;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 0 26px;
-}
-
-.login-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.login-button {
-    padding: 0.75rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.login-button.google {
+    padding: 30px;
+    text-align: center;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  
+  #loginform {
+    width: 50%;
+    height: 105%;
+    padding:5%;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    
+  }
+  
+  .logo img {
+    width: 200px;
+    margin-bottom:200 px;
+  }
+  
+  h2 {
+    font-size: 54px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding:12px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-google {
+    width: 80%;
     background-color: #4285f4;
-    color: white;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    margin-left: 60px;
+  }
+  
+  .btn-apple {
+    width: 80%;
+    background-color: #000;
+    color: #fff;
     
-}
-
-.logo{
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+  }
+  
+  .btn img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .divider {
     text-align: center;
-    margin-bottom: 2em;
-    
-}
+    margin: 50px 0;
+    border-radius: 25px;
+  }
+  
+  .divider span {
+    background-color: #fff;
+    padding: 0 50px;
+  }
 
-.imglogo{
-    max-width: 170px;
-    width: 100%;
-    margin: 50px auto 0;
 
-}
-
-.dlogog{
-    background: white;
-}
-
-.imglogog{
-    width: 10px;
-}
-
-.login-button.apple {
-    background-color: black;
-    color: white;
-}
-
-.divider {
-    margin: 1rem 0;
-    text-align: center;
-    font-size: 1rem;
-    color: #888;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-    text-align: left;
-}
-
-.form-group label {
+  .form-group {
+    margin-bottom: 20px;
+    border-radius: 25px;
+    text-align: start;
+  }
+  .nano {
+    border-radius: 25px;
+    text-align: start;
+  }
+  
+  label{
+    text-align: start;
+  }
+  .form-group label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 15px;
     font-weight: bold;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 0.75rem;
+    border-radius: 55px;
+  }
+  
+  .form-group input {
+    width: 70%;
+    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-}
-
-form a {
+    border-radius: 5px;
+  }
+  
+  .forgot-password {
     display: block;
-    margin: 0.5rem 0;
-    color: #007bff;
-    text-decoration: none;
-}
-
-form a:hover {
-    text-decoration: underline;
-}
-
-.signup-link {
-    margin-top: 1rem;
-}
-
-.signup-link a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
-}
-
-#col2 {
     
+    color: hsl(0, 0%, 13%);
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background-color: #00bfff;
+    color: #fff;
+    margin-left: 90px;
+    width: 75%;
+    margin-top: 5%;
+  }
+  
+  .signup-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-text a {
+    color: #007bff;
+  }
+  
+  .promo {
+    width: 55%;
+    text-align: center;
+  }
+  
+  .promo h2 {
+    font-size: 200px;
+    margin-bottom: 200px;
+  }
+  
+  .promo p {
+    font-size: 16px;
+    margin-bottom: 200px;
+  }
+  
+  .promo img {
+    width: 100%;
+    border-radius: 8px;
+    
+  }
+
+  .promo1 {
+    
+    color: #fff;
+  }
+  .promo1 h3{
+    
+    color: #fff;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100px; 
+  width: 100%;
+  
+  }
+  .promo1 img {
+    padding: 10px;
+    width: 85%;
+  }
+
+
+  #diaporamacontainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -130,17 +186,14 @@ form a:hover {
 
 .diaporama {
     position: relative;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     display: flex;
 }
 
 .slide {
     min-width: 100%;
     transition: opacity 1s ease;
-    text-align: center;
-    flex-basis: inherit;
-    
 }
 
 .slide img {
@@ -161,10 +214,19 @@ form a:hover {
 .diaporama {
     animation: slide 20s infinite;
 }
-
-span{
-    font-weight: 600;
-    font-size: 32px;
-    color: white;
-    text-align: center;
+.retourn-arrow{
+  position: absolute;
+  margin-top: 0px;
+  padding: 50px;
+  font-size: 50px;
 }
+
+ 
+  
+
+ 
+
+  
+  
+
+  

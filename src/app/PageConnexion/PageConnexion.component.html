@@ -1,68 +1,60 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6" id="col1" >
-            <div class="login-box">
-                <div class="logo">
-                    <a href="">
-                        <img class="imglogo" src="assets/images/logo.jpeg" alt="">
-                    </a>
-                </div>
-                <div class="login-header">
-                    <h4>Bonjour ! C est bon de te revoir. 👋</h4>
-                </div>
-                <div class="login-buttons">
-                    <button class="login-button google">
-                        S'IDENTIFIER AVEC GOOGLE
-                        <div class="dlogog">
-                            <img class="imglogog" src="assets/images/igoogle.png" alt="Google">
-                        </div>
-                    </button>
-                    <button class="login-button apple">S'IDENTIFIER AVEC APPLE</button>
-                </div>
-                <div class="divider">------- OU -------</div>
-                <form>
-                    <div class="form-group">
-                        <label for="username">Nom d'utilisateur ou email</label>
-                        <input type="text" id="username" placeholder="exemple@domaine.com" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Mot de passe</label>
-                        <input type="password" id="password" placeholder="Veuillez saisir votre mot de passe" class="form-control">
-                    </div>
-                    <a href="#">Vous avez oublié votre mot de passe ?</a>
-                    <a href="/dashboard">
-                        <button type="submit" class="btn btn-primary btn-block">S'IDENTIFIER</button>
-                    </a>
-                </form>
-                <div class="signup-link">
-                    <a href="/inscription">Vous êtes nouveau ? S'inscrire gratuitement</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6" id="col2">
-            <div class="diaporama-container">
-                <div class="diaporama">
-                    <div class="slide">
-                        <span>Impressionnez votre public</span>
-                        <div>
-                            <img src="https://forms.app/static/img/auth-slider1.png" alt="Member 1">
-                        </div>
-                        <span>Des thèmes spéciaux pour sadapter à votre style et à votre marque</span>
-                        <span>  Une impression durable avec plus de 50+ thèmes étonnants.
-                                Transformez votre formulaire en un clin dœil ou personnalisez-le 
-                                pour mettre en valeur votre flair et votre créativité.</span>
-                    </div>
-                    <div class="slide">
-                        <img src="https://forms.app/static/img/auth-slider2.png" alt="Member 2">
-                    </div>
-                    <div class="slide">
-                        <img src="https://forms.app/static/img/auth-slider3.png" alt="Member 3">
-                    </div>
-                    <div class="slide">
-                        <img src="https://forms.app/static/img/auth-slider4.png" alt="Member 4">
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- src/app/login/login.component.html -->
+
+<div style="cursor: pointer;" class="retourn-arrow" onclick="window.history.back();">&larr;</div>
+
+<div class="login-container">
+    <div class="col-md-6" id="loginform">
+            <div class="logo">
+        <img src="assets/images/logo.jpeg" alt="forms.app">
+      </div>
+      <h3>Bonjour ! Vous avez manqué à vos formulaires. 😊</h3>
+      <div style="padding: 0px;">
+      <button  class="btn btn-google" style="padding: 25px;"><br>
+        <img src="assets/images/igoogle.png" alt="Google logo">
+        S'IDENTIFIER AVEC GOOGLE 
+        
+      </button> <br>
+      <button  class="btn btn-apple" style="padding: 25px;">
+        <img src="assets/images/Apple.png" alt="Apple logo">
+        S'IDENTIFIER AVEC APPLE
+      </button>
     </div>
-</div>
+      <div class="divider">
+        <span>_________  OU _________</span>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="email">Nom d'utilisateur ou email</label>
+          <input formControlName="email" type="email" id="email" placeholder="exemple@domaine.com">
+        </div>
+        <div class="form-group nano">
+          <label for="password">Mot de passe</label>
+          <input formControlName="password" type="password" id="password" placeholder="Veuillez saisir votre mot de passe">
+        </div>
+        <a >Vous avez oublié le mot de passe</a>
+
+        <button class="btn btn-primary">S'IDENTIFIER</button>
+      </form>
+      <p class="signup-text">Vous êtes nouveau ? <a href="#">S'inscrire gratuitement</a></p>
+    </div>
+    
+    <div class="col-md-6" id="diaporamacontainer">
+      <div class="diaporama-container">
+          <div class="diaporama">
+              <div class="slide">
+                  <img src="https://forms.app/static/img/auth-slider1.png" alt="Member 1">
+              </div>
+              <div class="slide">
+                  <img src="https://forms.app/static/img/auth-slider2.png" alt="Member 2">
+              </div>
+              <div class="slide">
+                  <img src="https://forms.app/static/img/auth-slider3.png" alt="Member 3">
+              </div>
+              <div class="slide">
+                  <img src="https://forms.app/static/img/auth-slider4.png" alt="Member 4">
+              </div>
+          </div>
+      </div>
+  </div>
+    
+  </div>

@@ -1,53 +1,66 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-5">
-            <div class="login-box">
-                <div>
-                    <img src="assets/images/logo.jpeg" alt="">
-                </div>
-                <div class="login-header">
-                    <h1>Créez votre compte gratuitement !</h1>
-                </div>
-                <div class="login-buttons">
-                    <button class="login-button google">
-                        S'IDENTIFIER AVEC GOOGLE
-                        <div class="divlg">
-                            <img class="lg" src="assets/images/gg-png.png" alt="Google">
-                        </div>
-                    </button>
-                    <button class="login-button apple">S'IDENTIFIER AVEC APPLE</button>
-                </div>
-                <div class="divider">------- OU -------</div>
-                <div>
-                    <button class="login-button google">
-                        S'IDENTIFIER AVEC GOOGLE
-                        <div class="divlg">
-                            <img class="lg" src="assets/images/gg-png.png" alt="Google">
-                        </div>
-                    </button>
-                </div>
-                <div class="signup-link">
-                    <a href="#">Vous avez déjà un compte? S'identifier </a>
-                </div>
-            </div>
+<div class="signup-container">
+    <div style="cursor: pointer;" class="retourn-arrow" onclick="window.history.back();">&larr;</div>
+  
+      <div class="form-container">
+        <div class="col-md-6">
+        <div class="form-header">
+          <img src="assets/Frame 2 (1).png" alt="forms.app logo" class="logo"> <!-- Assurez-vous d'inclure le logo dans votre dossier d'actifs -->
         </div>
-        <div class="col-md-7">
-            <div class="diaporama-container">
-                <div class="diaporama">
-                    <div class="slide">
-                        <img src="https://forms.app/static/img/auth-slider1.png" alt="Member 1">
-                    </div>
-                    <div class="slide">
-                        <img src="https://forms.app/static/img/auth-slider2.png" alt="Member 2">
-                    </div>
-                    <div class="slide">
-                        <img src="https://forms.app/static/img/auth-slider3.png" alt="Member 3">
-                    </div>
-                    <div class="slide">
-                        <img src="https://forms.app/static/img/auth-slider4.png" alt="Member 4">
-                    </div>
-                </div>
-            </div>
+          <h2>Créez votre compte gratuitement !</h2>
         </div>
+        <form>
+          <div class="form-group">
+            <label for="fullName">Nom complet</label>
+            <input id="fullName" type="text" formControlName="fullName" placeholder="Veuillez saisir votre nom et prénom">
+            <div *ngIf="signupForm.get('fullName')!.invalid && signupForm.get('fullName')!.touched" class="error">
+              Nom complet est requis
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" formControlName="email" placeholder="exemple@domaine.com">
+            <div *ngIf="signupForm.get('email')!.invalid && signupForm.get('email')!.touched" class="error">
+              Email valide est requis
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <label for="username">Nom d'utilisateur</label>
+            <input id="username" type="text" formControlName="username" placeholder="Veuillez saisir votre nom d'utilisateur">
+            <div *ngIf="signupForm.get('username')!.invalid && signupForm.get('username')!.touched" class="error">
+              Nom d'utilisateur est requis
+            </div>
+          </div>
+    
+          <div class="form-group">
+            <label for="password">Mot de passe</label>
+            <input id="password" type="password" formControlName="password" placeholder="Veuillez saisir votre mot de passe">
+            <div *ngIf="signupForm.get('password')!.invalid && signupForm.get('password')!.touched" class="error">
+              Mot de passe (min 6 caractères) est requis
+            </div>
+          </div>
+    
+          <div class="form-group terms">
+            <input id="terms" type="checkbox" formControlName="terms">
+            <label for="terms">J'accepte Les <a href="#">Conditions D'utilisation</a> et La <a href="#">Politique De Confidentialité</a> de forms.app.</label>
+            <div *ngIf="signupForm.get('terms')!.invalid && signupForm.get('terms')!.touched" class="error">
+              Vous devez accepter les conditions
+            </div>
+          </div>
+    
+          <button>S'INSCRIRE GRATUITEMENT</button>
+        </form>
+        
+        <p>Vous avez déjà un compte? <a routerLink="/login">S'identifier</a></p>
+      </div>
+      <div class="info-container">
+        <h1>Automatisez votre flux de travail</h1>
+        <div class="integration-logos">
+          <img src="assets/auth-slider3.webp" alt="Slack">
+         
+        </div>
+        <h2>Plus de 500+ intégrations pour travailler avec vos outils préférés</h2>
+        <p>forms.app est un grand joueur d'équipe. Connectez vos formulaires à vos applications préférées et profitez d'un flux de travail beaucoup plus simple.</p>
+      </div>
     </div>
-</div>
