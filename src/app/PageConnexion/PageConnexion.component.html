@@ -8,14 +8,14 @@
 
         <div>
 
-                <div style="border: solid 1px #5085ec; background-color: #5085ec; padding: 5px; margin-bottom: 10px;">
+                <div style="border: solid 1px #5085ec;border-radius: 4px; margin-left: auto;margin-right: auto; background-color: #5085ec; width: 50%; padding: 10px; margin-bottom: 20px;">
                     <div style="border: solid 1px white; background: #fff; position: absolute;">
                         <img width="25px" src="assets/images/igoogle.png" alt="">
                     </div>
                     <span> <h4 style="color: white; font-size: 1em;"> S IDENTIFIER AVEC GOOGLE </h4> </span>
                 </div>
 
-                <div style="border: solid 1px ; background-color: black; padding: 5px;">
+                <div style="border: solid 1px ;border-radius: 4px; width: 50%; margin-left: auto; margin-right: auto; background-color: black; padding: 10px;">
                     <div style="border: solid 1px black; background: black; position: absolute;">
                         <img width="25px" src="https://orange-caraibe.twic.pics/2022-09/logo_apple_white.png" alt="">
                     </div>
@@ -30,17 +30,19 @@
 
                 <form  #loginForm="">
                   <div class="form-group">
-                    <label for="username">Nom d'utilisateur ou email</label>
-                    <input type="text" id="username" name="username" class="form-control"  required>
+                    <label style="margin-left: 25%;" for="username">Nom d'utilisateur ou email</label>
+                    <input style="width: 50%; margin-left: auto; margin-right: auto;" type="text" id="username" name="username" class="form-control"  required>
                   </div>
                   <div class="form-group">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password" name="password" class="form-control"  required>
+                    <label style="margin-left: 25%;" for="password">Mot de passe</label>
+                    <input style="width: 50%; margin-left: auto; margin-right: auto;" type="password" id="password" name="password" class="form-control"  required>
                   </div>
                   <div class="forgotPassword">
-                    <a class="Aforgot" href="/forgot-password">Vous avez oublié votre mot de passe ?</a>
+                    <a  class="Aforgot" href="/forgot-password">Vous avez oublié votre mot de passe ?</a>
                   </div>
-                  <button type="submit" class="btn btn-primary" [disabled]="!loginForm"> <a style="color: white; text-decoration: none;" href="/dashboard"> S IDENTIFIER </a> </button>
+
+                  <button style="margin-left: auto; margin-right: auto; width: 50%;" type="submit" class="btn btn-primary" [disabled]="!loginForm">S IDENTIFIER</button>
+
                 </form>
 
                 <div class="buttonIns" style="margin-top: 2em; font-size: 13px; text-align: left;">
@@ -51,6 +53,7 @@
                 </div>
 
     </div>
+
     
     <div class="col-md-6" id="diaporamacontainer">
       <div class="diaporama-container">
